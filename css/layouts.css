@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Layout A */
+.layout-a {
+    width: 800px;
+    border: 1px solid blue;
+    margin: 0 auto 20px;
+}
+
+.layout-a header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid blue;
+    padding: 10px;
+}
+
+.layout-a .logo {
+    font-weight: bold;
+}
+
+.layout-a nav a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: blue;
+}
+
+.layout-a main {
+    display: flex;
+    border-bottom: 1px solid blue;
+}
+
+.layout-a aside {
+    width: 150px;
+    padding: 10px;
+    border-right: 1px solid orange;
+}
+
+.layout-a button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.layout-a .content {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid green;
+    margin: 10px;
+}
+
+.layout-a .row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.layout-a .box {
+    width: 45%;
+    height: 100px;
+    border: 1px dashed red;
+}
+
+.layout-a footer {
+    text-align: center;
+    padding: 10px;
+}
+
+/* Layout B */
+
+.layout-b {
+    width: 800px;
+    margin: 0 auto 20px;
+    border: 2px solid black;
+}
+
+.layout-b .page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+}
+
+.layout-b .header {
+    background-color: purple;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.layout-b .content {
+    flex: 1;
+    display: flex;
+    background-color: orange;
+    padding: 10px;
+}
+
+.layout-b .entries {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.layout-b .entry {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.layout-b .sidebar {
+    flex: 1;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.footer {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* Layout C */
+.layout-c {
+    width: 800px;
+    margin: 0 auto 20px;
+    border: 2px solid black;
+}
+
+.layout-c .header {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.layout-c .main-content {
+    display: flex;
+    min-height: 300px;
+}
+
+.layout-c .navigation {
+    width: 100px;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+}
+
+.layout-c .content {
+    flex-grow: 1;
+    background-color: yellow;
+    padding: 10px;
+}
+
+.layout-c .sidebar {
+    width: 100px;
+    background-color: green;
+    color: white;
+    padding: 10px;
+}
+
+.layout-c .footer {
+    background-color: lightblue;
+    padding: 10px;
+    text-align: center;
+}

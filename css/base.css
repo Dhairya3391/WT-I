@@ -1,0 +1,146 @@
+/* Base styles with Tokyo Night inspired theme */
+:root {
+  --bg-primary: #1a1b26;
+  --bg-secondary: #24283b;
+  --text-primary: #a9b1d6;
+  --text-secondary: #9aa5ce;
+  --accent-purple: #bb9af7;
+  --accent-blue: #7aa2f7;
+  --accent-cyan: #7dcfff;
+  --accent-green: #9ece6a;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--accent-purple);
+}
+
+a {
+  color: var(--accent-blue);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-cyan);
+}
+
+/* Navigation styles */
+nav {
+  background-color: var(--bg-secondary);
+  padding: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li a {
+  color: var(--text-secondary);
+  font-weight: bold;
+}
+
+/* Main content area */
+main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Form styles */
+form {
+  background-color: var(--bg-secondary);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+input, select, textarea {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  border: 1px solid var(--accent-blue);
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+
+button {
+  background-color: var(--accent-blue);
+  color: var(--bg-primary);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--accent-cyan);
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+th, td {
+  border: 1px solid var(--accent-blue);
+  padding: 0.5rem;
+  text-align: left;
+}
+
+th {
+  background-color: var(--bg-secondary);
+}
+
+/* Footer styles */
+footer {
+  background-color: var(--bg-secondary);
+  color: var(--text-secondary);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Page transition effect */
+.page-transition {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.page-transition.fade-out {
+  opacity: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+  
+  nav ul li {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Animation for elements */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animated {
+  animation: fadeIn 0.5s ease-in-out;
+}

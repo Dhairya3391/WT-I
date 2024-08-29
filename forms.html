@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Forms</title>
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+    <form id="student-registration">
+        <h2>Student Registration</h2>
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname">
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+        
+        <label for="mobile">Mobile No.</label>
+        <input type="tel" id="mobile" name="mobile">
+        
+        <label for="address">Address</label>
+        <textarea id="address" name="address"></textarea>
+        
+        <label for="nationality">Nationality</label>
+        <input type="text" id="nationality" name="nationality">
+        
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob">
+        
+        <label>Gender</label>
+        <div class="radio-group">
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        
+        <label for="highest-degree">Highest Degree</label>
+        <select id="highest-degree" name="highest-degree">
+            <option value="">Select Degree</option>
+        </select>
+        
+        <label for="cpi">CPI</label>
+        <input type="number" id="cpi" name="cpi" step="0.01">
+        
+        <label for="university">University</label>
+        <input type="text" id="university" name="university">
+        
+        <label for="passing-year">Passing Year</label>
+        <select id="passing-year" name="passing-year">
+            <option value="">Select Your Passing Year</option>
+        </select>
+        
+        <div class="button-group">
+            <button type="submit">Submit</button>
+            <button type="reset">Cancel</button>
+        </div>
+    </form>
+
+    <form id="covid-registration">
+        <h2>COVID-19 Vaccine Registration Form</h2>
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="first-name">
+        
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="last-name">
+        
+        <label for="aadhar">Aadhar Number</label>
+        <input type="text" id="aadhar" name="aadhar">
+        
+        <label for="vaccine-name">Vaccine Name</label>
+        <select id="vaccine-name" name="vaccine-name">
+            <option value="">Please Select Vaccine Name</option>
+        </select>
+        
+        <label for="center-name">Vaccination Center Name</label>
+        <select id="center-name" name="center-name">
+            <option value="">Please Select Vaccination Center Name</option>
+        </select>
+        
+        <label for="dose-date">Date of Dose</label>
+        <input type="date" id="dose-date" name="dose-date">
+        
+        <label for="dose-number">Dose Number</label>
+        <input type="number" id="dose-number" name="dose-number">
+        
+        <div class="button-group">
+            <button type="submit">Submit</button>
+            <button type="reset">Cancel</button>
+        </div>
+    </form>
+
+    <form id="create-account">
+        <h2>Create Account</h2>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="firstname">First name*</label>
+                <input type="text" id="firstname" name="firstname" required>
+            </div>
+            <div class="form-group">
+                <label for="lastname">Last name*</label>
+                <input type="text" id="lastname" name="lastname" required>
+            </div>
+        </div>
+        
+        <label for="email2">Email*</label>
+        <input type="email" id="email2" name="email" required>
+        
+        <label for="password">Password*</label>
+        <input type="password" id="password" name="password" required>
+        
+        <label for="confirm-password">Confirm Password*</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+        
+        <div class="form-row">
+            <div class="form-group">
+                <label for="birthday">Birthday</label>
+                <div class="birthday-inputs">
+                    <select id="birthday-month" name="birthday-month">
+                        <option value="">Month</option>
+                    </select>
+                    <select id="birthday-day" name="birthday-day">
+                        <option value="">Day</option>
+                    </select>
+                    <select id="birthday-year" name="birthday-year">
+                        <option value="">Year</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="gender2">Gender</label>
+                <select id="gender2" name="gender">
+                    <option value="">Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+        </div>
+        
+        <button type="submit" class="create-button">Create</button>
+    </form>
+</body>
+</html>
